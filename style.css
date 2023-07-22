@@ -1,0 +1,69 @@
+* {
+  border: 1px solid red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-tab, header {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+
+  padding: 24px;
+
+  background-color: brown;
+  box-shadow: 0 5px 5px orange;
+  z-index: 1;
+}
+
+.header-tab {
+  background-color: lightsalmon;
+}
+
+header button {
+  padding-inline: .8em;
+  padding-block: .4em;
+
+  background-color: white;
+  border: 1px solid #555;
+  border-radius: .8em;
+  font-size: clamp(1rem, 1vw, 2.5rem);;
+}
+
+.active-tab {
+  background-color: gray;
+  color: white;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: stretch;
+}
+
+.insane-meal {
+  width: 450px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 45px;
+  background-color: powderblue;
+}
